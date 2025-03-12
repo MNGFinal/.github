@@ -51,7 +51,7 @@ CafeSync는 대형 프랜차이즈 카페의 운영을 본사와 가맹점과의
     <th>기술 스택</th>
   </tr>
   <tr>
-    <td><b>프레임워크 & 라이브러리</b></td>
+    <td><b>프레임워크 & 라이브러리　　　　　　　　　　</b></td>
     <td>HTML5, CSS3, JavaScript, React</td>
   </tr>
   <tr>
