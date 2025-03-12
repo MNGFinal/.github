@@ -44,7 +44,57 @@ CafeSync는 대형 프랜차이즈 카페의 운영을 본사와 가맹점과의
 여기에 아키텍처 설명
 
 ## 기술 스택
-여기에 기술 스택 설명
+### **Frontend**
+<table>
+  <tr>
+    <th>구분</th>
+    <th>기술 스택</th>
+  </tr>
+  <tr>
+    <td><b>프레임워크 & 라이브러리</b></td>
+    <td>HTML5, CSS3, JavaScript, React</td>
+  </tr>
+  <tr>
+    <td><b>상태 관리</b></td>
+    <td>Redux Toolkit, React-Redux, Redux-Thunk, Redux-Actions</td>
+  </tr>
+  <tr>
+    <td><b>UI 라이브러리</b></td>
+    <td>React-Icons, Recharts, Chart.js, React-Chartjs-2</td>
+  </tr>
+  <tr>
+    <td><b>일정 & 캘린더</b></td>
+    <td>FullCalendar (@fullcalendar/core, @fullcalendar/react, @fullcalendar/daygrid, @fullcalendar/interaction)</td>
+  </tr>
+  <tr>
+    <td><b>라우팅</b></td>
+    <td>React-Router-Dom</td>
+  </tr>
+  <tr>
+    <td><b>HTTP 요청</b></td>
+    <td>Axios</td>
+  </tr>
+  <tr>
+    <td><b>실시간 기능</b></td>
+    <td>Stomp.js (@stomp/stompjs), SockJS-Client</td>
+  </tr>
+  <tr>
+    <td><b>애니메이션</b></td>
+    <td>Lottie-React, @lottiefiles/react-lottie-player</td>
+  </tr>
+  <tr>
+    <td><b>PDF & 문서 처리</b></td>
+    <td>JSPDF, JSPDF-AutoTable, PDF-Lib</td>
+  </tr>
+  <tr>
+    <td><b>날짜 & 시간 관리</b></td>
+    <td>Moment.js, Date-Fns</td>
+  </tr>
+  <tr>
+    <td><b>기타 유틸리티</b></td>
+    <td>UUID, Web-Vitals</td>
+  </tr>
+</table>
 
 ## 기능 설명
 여기에 기능 설명
