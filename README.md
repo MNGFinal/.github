@@ -97,7 +97,7 @@ CafeSync는 대형 프랜차이즈 카페의 운영을 본사와 가맹점과의
 </table>
 
 <h3>🔙 Backend</h3>
-<table border="1">
+<table>
   <tr>
     <th>구분</th>
     <th>기술 스택</th>
@@ -148,16 +148,16 @@ CafeSync는 대형 프랜차이즈 카페의 운영을 본사와 가맹점과의
   </tr>
   <tr>
     <td><b>배포 환경</b></td>
-    <td>Railway, Nginx, Fly.io</td>
+    <td>Railway</td>
   </tr>
   <tr>
     <td><b>로그 관리</b></td>
-    <td>Logback, ELK Stack (Elasticsearch, Logstash, Kibana)</td>
+    <td>Spring AOP</td>
   </tr>
 </table>
 
 <h2>🚀 트래픽 테스트 & 모니터링</h2>
-<table border="1">
+<table>
   <tr>
     <th>구분</th>
     <th>도구</th>
@@ -181,7 +181,7 @@ CafeSync는 대형 프랜차이즈 카페의 운영을 본사와 가맹점과의
 </table>
 
 <h2>☁️ 파일 저장 & 데이터 백업</h2>
-<table border="1">
+<table>
   <tr>
     <th>구분</th>
     <th>기술</th>
