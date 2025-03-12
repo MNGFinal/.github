@@ -1,7 +1,13 @@
 # ☕CafeSync
 ![modern-browser-mockup](https://github.com/user-attachments/assets/fceef9ef-d8b3-4f7a-8c75-182f4b3b9dba)
 
-프로젝트 기간 25.02.17 ~ 25.03.14
+프로젝트 기간 25.02.17 ~ 25.03.14 <br/>
+
+---
+
+[🤝Discussions](https://github.com/orgs/MNGFinal/discussions) | [👍Front-PR](https://github.com/MNGFinal/CafeSync-Front/pulls?q=is%3Apr+is%3Aclosed) | [👍Back-PR](https://github.com/MNGFinal/CafeSync-Back/pulls?q=is%3Apr+is%3Aclosed) | [🖥️Front-Issues](https://github.com/MNGFinal/CafeSync-Front/issues?q=is%3Aissue%20state%3Aclosed) | [🔙Back-Issues](https://github.com/MNGFinal/CafeSync-Back/issues?q=is%3Aissue%20state%3Aclosed) | [👨‍💻Front-Project](https://github.com/MNGFinal/CafeSync-Front/projects?query=is%3Aopen) | [👩‍💻Back-Project](https://github.com/MNGFinal/CafeSync-Back/projects?query=is%3Aopen)
+
+---
 
 ## 🔗 빠른 이동
 - [프로젝트 소개](#프로젝트-소개)
