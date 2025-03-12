@@ -1,12 +1,30 @@
-## Hi there 👋
+# ☕CafeSync
+![modern-browser-mockup](https://github.com/user-attachments/assets/fceef9ef-d8b3-4f7a-8c75-182f4b3b9dba)
 
-<!--
+프로젝트 기간 25.02.17 ~ 25.03.14
 
-**Here are some ideas to get you started:**
+## 🔗 빠른 이동
+- [개요](#🗒️개요)
+- [프로젝트 소개](#⭐프로젝트-소개)
+- [프로젝트 일정](#📅프로젝트-일정)
+- [아키텍처](#✏️아키텍처)
+- [기술 스택](#🛠️기술-스택)
+- [논리, 물리 데이터 모델링](#🖼️논리-몰리-데이터-모델링)
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+## 🗒️개요
+여기에 개요 내용
+
+## ⭐프로젝트 소개
+여기에 프로젝트 소개
+
+## 📅프로젝트 일정 
+여기에 프로젝트 일정
+
+## ✏️아키텍처
+여기에 아키텍처 설명
+
+## 🛠️기술 스택
+여기에 기술 스택 설명
+
+## 🖼️논리, 몰리 데이터 모델링
+여기에 데이터 모델링 설명
