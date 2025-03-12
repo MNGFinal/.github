@@ -44,7 +44,7 @@ CafeSync는 대형 프랜차이즈 카페의 운영을 본사와 가맹점과의
 여기에 아키텍처 설명
 
 ## 기술 스택
-### **Frontend**
+### **🖥️Frontend**
 <table>
   <tr>
     <th>구분</th>
@@ -93,6 +93,106 @@ CafeSync는 대형 프랜차이즈 카페의 운영을 본사와 가맹점과의
   <tr>
     <td><b>기타 유틸리티</b></td>
     <td>UUID, Web-Vitals</td>
+  </tr>
+</table>
+
+<h3>🔙 Backend</h3>
+<table border="1">
+  <tr>
+    <th>구분</th>
+    <th>기술 스택</th>
+  </tr>
+  <tr>
+    <td><b>프레임워크</b></td>
+    <td>Java, Spring Boot</td>
+  </tr>
+  <tr>
+    <td><b>보안 & 인증</b></td>
+    <td>Spring Security, JWT (io.jsonwebtoken:jjwt)</td>
+  </tr>
+  <tr>
+    <td><b>ORM & DB</b></td>
+    <td>Spring Data JPA, MyBatis, MySQL</td>
+  </tr>
+  <tr>
+    <td><b>MySQL Replication</b></td>
+    <td>Master-Slave 구조 활용 (고가용성 및 백업)</td>
+  </tr>
+  <tr>
+    <td><b>Redis</b></td>
+    <td>Spring Data Redis (세션 관리 및 캐싱)</td>
+  </tr>
+  <tr>
+    <td><b>웹 서비스</b></td>
+    <td>Spring Boot Web (Spring MVC)</td>
+  </tr>
+  <tr>
+    <td><b>API 문서화</b></td>
+    <td>SpringDoc OpenAPI (Swagger)</td>
+  </tr>
+  <tr>
+    <td><b>WebSocket</b></td>
+    <td>Spring Boot WebSocket (STOMP)</td>
+  </tr>
+  <tr>
+    <td><b>이메일 전송</b></td>
+    <td>JavaMailSender (Spring Boot Mail)</td>
+  </tr>
+  <tr>
+    <td><b>모델 변환</b></td>
+    <td>ModelMapper</td>
+  </tr>
+  <tr>
+    <td><b>테스트</b></td>
+    <td>JUnit, Spring Security Test, MyBatis Test</td>
+  </tr>
+  <tr>
+    <td><b>배포 환경</b></td>
+    <td>Railway, Nginx, Fly.io</td>
+  </tr>
+  <tr>
+    <td><b>로그 관리</b></td>
+    <td>Logback, ELK Stack (Elasticsearch, Logstash, Kibana)</td>
+  </tr>
+</table>
+
+<h2>🚀 트래픽 테스트 & 모니터링</h2>
+<table border="1">
+  <tr>
+    <th>구분</th>
+    <th>도구</th>
+    <th>역할</th>
+  </tr>
+  <tr>
+    <td><b>부하 테스트</b></td>
+    <td>JMeter</td>
+    <td>다중 사용자 트래픽 시뮬레이션, 성능 테스트 수행</td>
+  </tr>
+  <tr>
+    <td><b>메트릭 수집</b></td>
+    <td>Prometheus</td>
+    <td>애플리케이션 및 서버 메트릭 수집, 성능 모니터링</td>
+  </tr>
+  <tr>
+    <td><b>데이터 시각화</b></td>
+    <td>Grafana</td>
+    <td>Prometheus 데이터를 기반으로 성능 대시보드 시각화</td>
+  </tr>
+</table>
+
+<h2>☁️ 파일 저장 & 데이터 백업</h2>
+<table border="1">
+  <tr>
+    <th>구분</th>
+    <th>기술</th>
+  </tr>
+  <tr>
+    <td><b>파일 저장소</b></td>
+    <td>Firebase Storage (이미지 및 파일 관리)</td>
+  </tr>
+  <tr>
+    <td><b>DB 백업 & 복제</b></td>
+    <td>MySQL Replication (Master-Slave 복제)</td>
   </tr>
 </table>
 
