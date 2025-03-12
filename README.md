@@ -104,7 +104,7 @@ CafeSync는 대형 프랜차이즈 카페의 운영을 본사와 가맹점과의
   </tr>
   <tr>
     <td><b>프레임워크　　　　　　</b></td>
-    <td>Java, Spring Boot　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td>
+    <td>Java, Spring Boot　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td>
   </tr>
   <tr>
     <td><b>보안 & 인증</b></td>
