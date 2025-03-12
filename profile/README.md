@@ -38,6 +38,8 @@ CafeSync는 대형 프랜차이즈 카페의 운영을 본사와 가맹점과의
 - 마케팅 및 프로모션 전략 분석 지원
 - 지점별 운영 효율성 비교 및 개선점 도출
 
+[🟨팀 노션](https://www.notion.so/ohgiraffers/60cc7536288b4df6abe34fc9425a9947)  [🌈Figma](https://www.figma.com/design/fCWU0YWRTSobSMnrvXK6bA/MNG?node-id=43-4627&t=nBIeEnq1qjnJXkSb-1)
+
 ## 프로젝트 일정 
 여기에 프로젝트 일정
 
@@ -198,14 +200,91 @@ CafeSync는 대형 프랜차이즈 카페의 운영을 본사와 가맹점과의
 </table>
 
 ## 기능 설명
-여기에 기능 설명
+### 📌로그인
+![1  로그인](https://github.com/user-attachments/assets/cc0a5fa3-ebd5-4ecd-a20d-8a40fdb9ff14)
+- 본사에서 부여받은 아이디와 비밀번호로 로그인이 가능합니다.
+- 로그인과 동시에 AccessToken(15분), RefreshToken(7일)이 발급됩니다.
+- AccessToken은 세션에 저장하였고, RefreshToken은 Redis에 저장하였습니다
+
+### 📌아이디 찾기
+![2  아이디 찾기](https://github.com/user-attachments/assets/77e0a5bc-d4c3-4a77-8d20-28ad1d948e70)
+- 가맹점과 본사를 선택적으로 아이디 찾기를 할 수 있습니다.
+
+### 📌비밀번호 찾기
+![3  비밀번호 찾기](https://github.com/user-attachments/assets/1a53abd5-fe91-4d66-b3fa-524d72e45173)
+- DB와 일치한 정보는 해당 이메일로 인증번호가 발송됩니다.
+- 인증번호는 Redis 에 5분간 저장이 되며 5분 후에는 만료되어 사용할 수 없습니다.
+- 일치할 시 비밀번호 변경 페이지로 이동합니다.
+
+### 📌메인화면
+![4  메인화면](https://github.com/user-attachments/assets/948a0199-adb8-4ac3-a891-91c66faeca7a)
+- 전반적인 전사 공지사항, 스케줄, 재고부족품목, 매출현황 그래프를 확인할 수 있습니다.
+
+### 📌 AccessToken 갱신 및 자동 로그아웃
+![4-1  토큰 만료 시 자동 로그아웃](https://github.com/user-attachments/assets/41533aa0-d973-41cb-8644-b274f48af565)
+- 상단에 로그아웃 버튼 및 AccessToken 만료 시간을 확인할 수 있으며 만료 시 자동 로그아웃이 됩니다.
+
+### 📌토큰 갱신 가능
+![4-2  토큰 갱신](https://github.com/user-attachments/assets/16e3c5e3-a2a1-4d3d-9717-c9b8e46d6452)
+- 연장 버튼을 누른다면 Redis 에 저장된 RefreshToken 기반으로 AccessToken을 갱신할 수 있도록 하였습니다.
+
+## 📌재고관리(가맹점)
+![5  재고관리(가맹점)](https://github.com/user-attachments/assets/37dbcfaf-a282-49b8-8491-5a3898b6e494)
+- 로그인한 가맹점의 재고 현황을 확인할 수 있습니다.
+- 재고목록을 체크하여 PDF 파일로 추출할 수 있습니다.
+- 유통기한 임박 및 재고부족 필터링이 가능합니다.
+
+## 📌입출고 관리
+![5-1  입출고 신청](https://github.com/user-attachments/assets/5ca7bcd0-d7fc-4242-b276-5a8b520d7c87)
+- 부족한 재고는 타 매장에서 요청 시 출고하는 매장에서 출고 등록할 수 있도록 하였습니다.
+- 입고 매장은 승인 또는 취소 처리를 할 수 있습니다.
+
+## 📌메뉴관리(가맹점)
+![6  메뉴관리(가맹점)](https://github.com/user-attachments/assets/60b8a0a3-28e3-47f0-a5a5-7acf669fef7f)
+- 현재 판매되고 있는 메뉴들을 확인할 수 있습니다.
+- 메뉴 사진들은 Firebase 를 사용하여 클라우스 서버에 저장하였습니다.
+
+## 📌전표처리
+![7  전표처리](https://github.com/user-attachments/assets/25bd9a7a-e80d-48ee-94d5-c2544af562b8)
+- 가맹점 및 본사는 전표처리를 할 수 있습니다
+- 행 추가 버튼을 누를 시 목록을 추가할 수 있습니다
+- 체크 후 세금계산서 or 손익계산서가 발행됩니다.
+- 초기 데이터값은 시스템 날짜 기준으로 한 달치를 조회합니다.
+
+## 📌세금 계산서 발행
+![8  세금 계산서 발행](https://github.com/user-attachments/assets/a04bed2b-1538-4b54-a2df-7f68d6feedf5)
+- 전표처리에서 선택한 행의 데이터 기반으로 세금 계산서를 발행할 수 있으며 PDF 파일로도 추출 가능하도록 하였습니다.
+
+## 📌손익 계산서 발행
+![9  손익 계산서 발행](https://github.com/user-attachments/assets/f0b77071-178e-4896-8887-6991ee0150b4)
+- 전표처리에서 선택한 행의 데이터 기반으로 손익 계산서를 발행할 수 있으며 PDF 파일로도 추출 가능하도록 하였습니다.
+
+## 📌컴플레인
+![10  컴플레인](https://github.com/user-attachments/assets/bc8f38cb-6ffc-46f7-824d-3fdc7140d6c8)
+- 컴플레인을 등록할 수 있습니다.
+- 시간 선택은 현재 시간보다 이 후인 시간을 선택할 수 없도록 하였습니다.
+
+## 📌직원목록
+![11  직원 목록](https://github.com/user-attachments/assets/1c5b1f8f-9166-46db-8e28-e6a1ec70eabb)
+- 각 가맹점마다 근무하는 직원 및 퇴사자를 확인할 수 있습니다.
+- 점장 직급만 직원의 정보를 수정하거나 등록을 할 수 있도록 하였습니다.
+- 직원 등록 시 다음 주소 API 를 사용하여 정확한 주소지를 선택할 수 있도록 하였습니다.
+- 프로필 사진은 Firebase 클라우드 서버에 업로드가 되도록 하였습니다.
+
+## 📌스케줄 등록
+![12  스케줄 등록](https://github.com/user-attachments/assets/2766195d-ed5e-4c32-9b14-8d23c229151e)
+- 점장 직급만 스케줄 등록 및 수정할 수 있도록 하였습니다.
+- 로그인된 가맹점의 데이터 기반으로 직원 정보 가져와서 오픈 미들 마감을 등록할 수 있습니다.
+
+## 📌공지사항
+
+
+- 공지사항은 본사에서 각 가맹점에 전달할 사항들을 작성하는 공간입니다.
+- 본사에서만 작성이 가능하며 첨부파일은 Firebase 에 저장 및 다운로드를 받을 수 있도록 하였습니다.
 
 ## 논리 & 물리 데이터 모델링(총 32개 테이블 - 수정중)
 ### 🖼️논리 데이터 모델링
 ![image](https://github.com/user-attachments/assets/c83c72d3-2a89-4fe7-a1b5-a0985bddf276)
-<br/>
-<br/>
-### 🖼물리 데이터 모델링
-![image](https://github.com/user-attachments/assets/fbd038eb-2531-451e-905b-40f5926fac0d)
 
-### Wiki
+## Wiki
+Wiki 정리 예정
