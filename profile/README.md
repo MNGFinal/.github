@@ -41,7 +41,7 @@ CafeSync는 대형 프랜차이즈 카페의 운영을 본사와 가맹점과의
 [🟨팀 노션](https://www.notion.so/ohgiraffers/60cc7536288b4df6abe34fc9425a9947)  [🌈Figma](https://www.figma.com/design/fCWU0YWRTSobSMnrvXK6bA/MNG?node-id=43-4627&t=nBIeEnq1qjnJXkSb-1)
 
 ## 프로젝트 일정 
-여기에 프로젝트 일정
+![일정 관리](https://github.com/user-attachments/assets/941bc5dc-f9ac-456a-992d-f602302732cf)
 
 ## 아키텍처
 여기에 아키텍처 설명
@@ -218,7 +218,8 @@ CafeSync는 대형 프랜차이즈 카페의 운영을 본사와 가맹점과의
 
 ### 📌메인화면
 ![4  메인화면](https://github.com/user-attachments/assets/948a0199-adb8-4ac3-a891-91c66faeca7a)
-- 전반적인 전사 공지사항, 스케줄, 재고부족품목, 매출현황 그래프를 확인할 수 있습니다.
+- 로그인 정보의 따라서 가맹점 및 본사 페이지로 이동할 수 있도록 하였습니다.
+- 가맹점 메인화면은 전사 공지사항, 스케줄, 재고부족품목, 매출현황 그래프를 확인할 수 있습니다.
 
 ### 📌 AccessToken 갱신 및 자동 로그아웃
 ![4-1  토큰 만료 시 자동 로그아웃](https://github.com/user-attachments/assets/41533aa0-d973-41cb-8644-b274f48af565)
@@ -238,6 +239,21 @@ CafeSync는 대형 프랜차이즈 카페의 운영을 본사와 가맹점과의
 ![5-1  입출고 신청](https://github.com/user-attachments/assets/5ca7bcd0-d7fc-4242-b276-5a8b520d7c87)
 - 부족한 재고는 타 매장에서 요청 시 출고하는 매장에서 출고 등록할 수 있도록 하였습니다.
 - 입고 매장은 승인 또는 취소 처리를 할 수 있습니다.
+
+## 📌가맹점별 재고현황
+![17  가맹점별 재고 현황](https://github.com/user-attachments/assets/51b5e201-ba6d-43db-afdf-c123376ac985)
+- 타 매장의 보유하고 있는 재고를 확인할 수 있습니다.
+
+## 📌발주신청
+![18  발주신청](https://github.com/user-attachments/assets/e27c8d8c-6568-4e17-b0c5-e8b318849c9e)
+- 부족한 재고는 발주 신청을 할 수 있습니다.
+- 본사는 각 가맹점의 발주 신청 내역을 확인할 수 있으며 승인 또는 반려 처리를 할 수 있습니다
+
+## 📌공급업체 관리
+![19  공급업체 관리](https://github.com/user-attachments/assets/9a1a6495-9b3e-43d5-a77c-ef55068b281d)
+- 본사는 계약되어 있는 거래처를 확인할 수 있으며 신규 등록 및 수정, 계약해지를 할 수 있습니다.
+- 업체 이미지는 Firebase 에 업로드 되도록 하였습니다.
+- 업체 등록 시 주소는 다음 주소API 를 활용하였습니다.
 
 ## 📌메뉴관리(가맹점)
 ![6  메뉴관리(가맹점)](https://github.com/user-attachments/assets/60b8a0a3-28e3-47f0-a5a5-7acf669fef7f)
@@ -277,10 +293,30 @@ CafeSync는 대형 프랜차이즈 카페의 운영을 본사와 가맹점과의
 - 로그인된 가맹점의 데이터 기반으로 직원 정보 가져와서 오픈 미들 마감을 등록할 수 있습니다.
 
 ## 📌공지사항
-
-
+![13  공지사항](https://github.com/user-attachments/assets/35b35cbe-7fe6-4159-bf8e-f6f6797bf40a)
 - 공지사항은 본사에서 각 가맹점에 전달할 사항들을 작성하는 공간입니다.
 - 본사에서만 작성이 가능하며 첨부파일은 Firebase 에 저장 및 다운로드를 받을 수 있도록 하였습니다.
+
+
+## 📌실시간 채팅
+![14  실시간채팅](https://github.com/user-attachments/assets/c2186172-0a0a-4805-ab98-63e73929d233)
+![14-1  그룹채팅](https://github.com/user-attachments/assets/6e9331b2-25f9-4bf1-b0fd-a3b823640fac)
+- WebSocket + STOMP + Redis 를 활용하여 1:1, 그룹채팅이 가능합니다.
+- 채팅방 개설 및 채팅방 이름도 변경할 수 있습니다.
+- 채팅 내역은 DB 부하 방지를 위해 MySQL 에 즉시 저장되지 않으며 Redis 에 보관한 뒤 30초마다 배치 처리를 통해 MySQL 에 저장됩니다.
+
+
+## 📌바리스타 노트
+![15  바리스타 노트](https://github.com/user-attachments/assets/447d0f71-7b8d-4241-8fd9-9d319b1327a6)
+- 바리스타 노트는 본사 + 각 가맹점 별로 소통을 할 수 있는 커뮤니티 게시판 입니다.
+- 파일첨부 시 Firebase 에 업로드 및 다운로드를 할 수 있도록 하였습니다.
+
+## 📌통계
+![16  통계](https://github.com/user-attachments/assets/fdbc8da6-d917-4320-8337-a79536a631f5)
+- 가맹점 및 본사는 판매현황 통계를 확인할 수 있습니다.
+- 대시보드의 경우 Chart.js 라이브러리를 사용하였습니다.
+
+
 
 ## 논리 & 물리 데이터 모델링(총 32개 테이블 - 수정중)
 ### 🖼️논리 데이터 모델링
