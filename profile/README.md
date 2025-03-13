@@ -334,4 +334,9 @@ CafeSync는 대형 프랜차이즈 카페의 운영을 본사와 가맹점과의
 ![image](https://github.com/user-attachments/assets/c83c72d3-2a89-4fe7-a1b5-a0985bddf276)
 
 ## Wiki
-Wiki 정리 예정
+### 🛠️기능 개발중 개선했던 항목 정리
+- [🛡️로그인 - JWT + Redis 활용](https://github.com/MNGFinal/CafeSync-Back/wiki/%EB%A1%9C%EA%B7%B8%EC%9D%B8-Spring-Security---JWT---Redis-%ED%99%9C%EC%9A%A9)
+- [💬실시간 채팅(1:1, 그룹채팅) - WebSocket + STOMP + Redis](https://github.com/MNGFinal/CafeSync-Back/wiki/%EC%8B%A4%EC%8B%9C%EA%B0%84-%EC%B1%84%ED%8C%85(1:1,-%EA%B7%B8%EB%A3%B9%EC%B1%84%ED%8C%85)-%E2%80%90-WebSocket---STOMP---Redis)
+- [🎨이미지 및 파일 업로드, 다운로드 - Firebase + Google Cloud CDN 방식 적용](https://github.com/MNGFinal/CafeSync-Front/wiki/Firebase-%EC%9D%B4%EB%AF%B8%EC%A7%80,-%ED%8C%8C%EC%9D%BC-%EC%A0%80%EC%9E%A5-%EB%B0%8F-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C--URL-%EB%B0%98%ED%99%98)
+- [🚀트래픽 테스트 - JMeter + Prometheus + Grafana](https://github.com/MNGFinal/CafeSync-Back/wiki/%ED%8A%B8%EB%9E%98%ED%94%BD-%ED%85%8C%EC%8A%A4%ED%8A%B8(JMeter---Prometheus---Grafana))
+- [🔥DB 백업 및 부하분산 - MySQL Replication 도입](https://github.com/MNGFinal/CafeSync-Back/wiki/MySQL-Replication(AOP-%ED%99%9C%EC%9A%A9%ED%95%9C-Master,-Slave-%EB%B6%80%ED%95%98-%EB%B6%84%EC%82%B0-%EC%B2%98%EB%A6%AC))
