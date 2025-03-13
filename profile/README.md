@@ -50,8 +50,7 @@ CafeSync는 대형 프랜차이즈 카페의 운영을 본사와 가맹점과의
 ![일정 관리](https://github.com/user-attachments/assets/941bc5dc-f9ac-456a-992d-f602302732cf)
 
 ## 아키텍처
-![image](https://github.com/user-attachments/assets/c56b37fc-1058-4796-a004-93977f0db3a0)
-
+![아키텍처 설계](https://github.com/user-attachments/assets/10bf5190-612d-42d6-95c2-d5915569e7f3)
 
 
 ## 기술 스택
