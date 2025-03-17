@@ -343,7 +343,7 @@ CafeSync는 대형 프랜차이즈 카페의 운영을 본사와 가맹점과의
 
 ## Wiki
 ### MNG 팀 소개
-- [👨‍👩‍👧‍👦팀 소개 및 맡은 기능 정리](https://github.com/MNGFinal/CafeSync-Front/wiki/%ED%8C%80-%EC%86%8C%EA%B0%9C-%EB%B0%8F-%EB%A7%A1%EC%9D%80-%EA%B8%B0%EB%8A%A5)
+- [👨‍👩‍👧‍👦팀 GitHub 프로필 및 맡은 기능 정리](https://github.com/MNGFinal/CafeSync-Front/wiki/%ED%8C%80-GitHub-%ED%94%84%EB%A1%9C%ED%95%84-%EB%B0%8F-%EB%A7%A1%EC%9D%80-%EA%B8%B0%EB%8A%A5-%EC%A0%95%EB%A6%AC)
 
 ### 🛠️기능 개발중 개선했던 항목 정리
 - [🛡️로그인 - JWT + Redis 활용](https://github.com/MNGFinal/CafeSync-Back/wiki/%EB%A1%9C%EA%B7%B8%EC%9D%B8-Spring-Security---JWT---Redis-%ED%99%9C%EC%9A%A9)
